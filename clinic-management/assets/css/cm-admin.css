@@ -1,0 +1,14 @@
+/* Clinic Management Admin Styles */
+.cm-dashboard-appointments li {
+    margin-bottom: 4px;
+}
+
+.cm-portal {
+    background: #fff;
+    padding: 20px;
+}
+
+.cm-portal h2 {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+}
