@@ -1,0 +1,555 @@
+/* Clinic Management System - Public Styles */
+
+/* General Layout */
+.cms-public-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+/* Patient Portal */
+.cms-patient-portal {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: 20px 0;
+}
+
+.cms-portal-header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 40px;
+    text-align: center;
+}
+
+.cms-portal-header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    font-weight: 300;
+}
+
+.cms-portal-header p {
+    margin: 10px 0 0 0;
+    opacity: 0.9;
+    font-size: 1.1em;
+}
+
+.cms-portal-content {
+    padding: 40px;
+}
+
+/* Login Form */
+.cms-login-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+.cms-login-form h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+    font-weight: 300;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #333;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #e1e5e9;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.cms-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+    width: 100%;
+}
+
+.cms-btn-primary {
+    background: #667eea;
+    color: white;
+}
+
+.cms-btn-primary:hover {
+    background: #5a6fd8;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+.cms-forgot-password {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    color: #667eea;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.cms-forgot-password:hover {
+    text-decoration: underline;
+}
+
+.cms-login-message {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    display: none;
+}
+
+.cms-login-message.success {
+    background: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.cms-login-message.error {
+    background: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+/* Portal Dashboard */
+.cms-dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.cms-dashboard-card {
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    border: 1px solid #f0f0f0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cms-dashboard-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.cms-dashboard-card h3 {
+    margin: 0 0 20px 0;
+    color: #333;
+    font-size: 1.3em;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cms-dashboard-card h3 i {
+    color: #667eea;
+}
+
+.cms-dashboard-card .card-content {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Appointment Booking */
+.cms-booking-form {
+    background: white;
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    margin: 20px 0;
+}
+
+.cms-booking-form h3 {
+    margin: 0 0 30px 0;
+    color: #333;
+    text-align: center;
+    font-weight: 300;
+}
+
+.booking-form-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.booking-form-grid .form-group {
+    margin-bottom: 0;
+}
+
+.cms-booking-form .cms-btn {
+    width: auto;
+    min-width: 150px;
+}
+
+/* Calendar */
+.cms-calendar {
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    margin: 20px 0;
+}
+
+.cms-calendar h3 {
+    margin: 0 0 25px 0;
+    color: #333;
+    text-align: center;
+}
+
+.fc-event {
+    border-radius: 6px;
+    border: none;
+    padding: 3px 6px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.fc-event:hover {
+    opacity: 0.8;
+}
+
+/* Patient Info */
+.cms-patient-info {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    color: white;
+    border-radius: 15px;
+    padding: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.cms-patient-info h2 {
+    margin: 0 0 15px 0;
+    font-weight: 300;
+}
+
+.cms-patient-info .patient-details {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.cms-patient-info .detail-item {
+    text-align: center;
+}
+
+.cms-patient-info .detail-label {
+    font-size: 12px;
+    opacity: 0.8;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.cms-patient-info .detail-value {
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+/* Medical Records */
+.cms-medical-records {
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    margin: 20px 0;
+}
+
+.cms-medical-records h3 {
+    margin: 0 0 25px 0;
+    color: #333;
+    border-bottom: 2px solid #667eea;
+    padding-bottom: 15px;
+}
+
+.record-item {
+    border: 1px solid #e1e5e9;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+}
+
+.record-item:hover {
+    border-color: #667eea;
+    box-shadow: 0 3px 10px rgba(102, 126, 234, 0.1);
+}
+
+.record-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.record-date {
+    font-weight: 600;
+    color: #333;
+}
+
+.record-type {
+    background: #667eea;
+    color: white;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.record-content {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Billing */
+.cms-billing-section {
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    margin: 20px 0;
+}
+
+.cms-billing-section h3 {
+    margin: 0 0 25px 0;
+    color: #333;
+    border-bottom: 2px solid #667eea;
+    padding-bottom: 15px;
+}
+
+.billing-item {
+    display: grid;
+    grid-template-columns: 1fr auto auto auto;
+    gap: 20px;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #e1e5e9;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+}
+
+.billing-item:hover {
+    border-color: #667eea;
+    box-shadow: 0 3px 10px rgba(102, 126, 234, 0.1);
+}
+
+.billing-info h4 {
+    margin: 0 0 5px 0;
+    color: #333;
+}
+
+.billing-info .invoice-number {
+    color: #666;
+    font-size: 14px;
+}
+
+.billing-amount {
+    font-weight: 600;
+    color: #333;
+}
+
+.billing-status {
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.billing-status.paid {
+    background: #d4edda;
+    color: #155724;
+}
+
+.billing-status.unpaid {
+    background: #f8d7da;
+    color: #721c24;
+}
+
+.billing-status.partial {
+    background: #fff3cd;
+    color: #856404;
+}
+
+.billing-actions .cms-btn {
+    width: auto;
+    padding: 8px 16px;
+    font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .cms-public-container {
+        padding: 10px;
+    }
+    
+    .cms-portal-header {
+        padding: 30px 20px;
+    }
+    
+    .cms-portal-header h1 {
+        font-size: 2em;
+    }
+    
+    .cms-portal-content {
+        padding: 20px;
+    }
+    
+    .cms-dashboard-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .booking-form-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .billing-item {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        text-align: center;
+    }
+    
+    .cms-patient-info .patient-details {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Loading States */
+.cms-loading {
+    opacity: 0.6;
+    pointer-events: none;
+    position: relative;
+}
+
+.cms-loading::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    margin: -10px 0 0 -10px;
+    border: 2px solid #f3f3f3;
+    border-top: 2px solid #667eea;
+    border-radius: 50%;
+    animation: cms-spin 1s linear infinite;
+}
+
+@keyframes cms-spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Notifications */
+.cms-notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+    max-width: 400px;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+}
+
+.cms-notification.show {
+    transform: translateX(0);
+}
+
+.cms-notification.success {
+    border-left: 4px solid #28a745;
+}
+
+.cms-notification.error {
+    border-left: 4px solid #dc3545;
+}
+
+.cms-notification.info {
+    border-left: 4px solid #17a2b8;
+}
+
+.cms-notification-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.cms-notification-title {
+    font-weight: 600;
+    color: #333;
+}
+
+.cms-notification-close {
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    color: #666;
+}
+
+.cms-notification-message {
+    color: #666;
+    line-height: 1.5;
+}
+
+/* Print Styles */
+@media print {
+    .cms-portal-header,
+    .cms-btn,
+    .cms-notification {
+        display: none;
+    }
+    
+    .cms-public-container {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .cms-dashboard-card,
+    .cms-booking-form,
+    .cms-calendar,
+    .cms-medical-records,
+    .cms-billing-section {
+        box-shadow: none;
+        border: 1px solid #ccc;
+        margin: 10px 0;
+    }
+}
