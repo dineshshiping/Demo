@@ -1,0 +1,630 @@
+/**
+ * Clinic Management System - Admin Styles
+ */
+
+/* Global Admin Styles */
+.cms-admin-wrapper {
+    margin: 20px 0;
+}
+
+.cms-alerts {
+    margin-bottom: 20px;
+}
+
+/* Dashboard Styles */
+.cms-dashboard {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.cms-stats-cards {
+    margin-bottom: 30px;
+}
+
+.cms-stat-card {
+    background: #fff;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease;
+    overflow: hidden;
+}
+
+.cms-stat-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+}
+
+.cms-stat-card .card-body {
+    padding: 25px;
+}
+
+.cms-stat-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.cms-stat-icon.patients { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+.cms-stat-icon.appointments { background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); }
+.cms-stat-icon.consultations { background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); }
+.cms-stat-icon.revenue { background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%); }
+
+.cms-stat-number {
+    font-size: 32px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
+
+.cms-stat-label {
+    color: #7f8c8d;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.cms-stat-change {
+    font-size: 12px;
+    padding: 3px 8px;
+    border-radius: 20px;
+}
+
+.cms-stat-change.positive {
+    background: #d4edda;
+    color: #155724;
+}
+
+.cms-stat-change.negative {
+    background: #f8d7da;
+    color: #721c24;
+}
+
+/* Quick Actions */
+.cms-quick-actions {
+    margin-bottom: 30px;
+}
+
+.cms-quick-action {
+    background: #fff;
+    border: 2px solid #e9ecef;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    color: #495057;
+    display: block;
+}
+
+.cms-quick-action:hover {
+    border-color: #007bff;
+    background: #f8f9ff;
+    text-decoration: none;
+    color: #007bff;
+    transform: translateY(-2px);
+}
+
+.cms-quick-action i {
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #007bff;
+}
+
+.cms-quick-action h5 {
+    margin-bottom: 0;
+    font-weight: 600;
+}
+
+/* Patient Management */
+.cms-patient-search {
+    margin-bottom: 20px;
+}
+
+.cms-patient-search .form-control {
+    border-radius: 25px;
+    padding: 12px 20px;
+    border: 2px solid #e9ecef;
+    font-size: 16px;
+}
+
+.cms-patient-search .form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+
+.cms-patient-card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.cms-patient-card:hover {
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    transform: translateY(-2px);
+}
+
+.cms-patient-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+.cms-patient-info h5 {
+    margin-bottom: 5px;
+    color: #2c3e50;
+}
+
+.cms-patient-details {
+    color: #7f8c8d;
+    font-size: 14px;
+}
+
+.cms-patient-id {
+    background: #e3f2fd;
+    color: #1565c0;
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+/* Form Styles */
+.cms-form {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.cms-form .form-label {
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 8px;
+}
+
+.cms-form .form-control,
+.cms-form .form-select {
+    border: 2px solid #e9ecef;
+    border-radius: 8px;
+    padding: 12px 15px;
+    transition: all 0.3s ease;
+}
+
+.cms-form .form-control:focus,
+.cms-form .form-select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+
+.cms-form .form-control.is-invalid {
+    border-color: #dc3545;
+}
+
+.cms-form .btn {
+    padding: 12px 30px;
+    border-radius: 8px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Medicine Management */
+.cms-medicine-row {
+    background: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+.cms-medicine-row .form-control {
+    margin-bottom: 10px;
+}
+
+.cms-add-medicine-btn {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+.cms-remove-medicine-btn {
+    background: #dc3545;
+    border: none;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+/* Appointment Calendar */
+.cms-calendar {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.cms-appointment-slot {
+    padding: 8px 12px;
+    margin: 2px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.cms-appointment-slot.available {
+    background: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.cms-appointment-slot.booked {
+    background: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+.cms-appointment-slot:hover {
+    transform: scale(1.05);
+}
+
+/* Billing Styles */
+.cms-bill-summary {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.cms-bill-total {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.cms-payment-status {
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.cms-payment-status.paid {
+    background: #d4edda;
+    color: #155724;
+}
+
+.cms-payment-status.unpaid {
+    background: #f8d7da;
+    color: #721c24;
+}
+
+.cms-payment-status.partial {
+    background: #fff3cd;
+    color: #856404;
+}
+
+/* Inventory Styles */
+.cms-inventory-item {
+    background: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+}
+
+.cms-inventory-item:hover {
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.cms-stock-level {
+    padding: 3px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.cms-stock-level.low {
+    background: #f8d7da;
+    color: #721c24;
+}
+
+.cms-stock-level.medium {
+    background: #fff3cd;
+    color: #856404;
+}
+
+.cms-stock-level.high {
+    background: #d4edda;
+    color: #155724;
+}
+
+/* Modal Styles */
+.cms-modal .modal-header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border-bottom: none;
+}
+
+.cms-modal .modal-title {
+    font-weight: 600;
+}
+
+.cms-modal .btn-close {
+    filter: invert(1);
+}
+
+/* Table Styles */
+.cms-table {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.cms-table th {
+    background: #f8f9fa;
+    border-bottom: 2px solid #dee2e6;
+    font-weight: 600;
+    color: #2c3e50;
+    padding: 15px;
+}
+
+.cms-table td {
+    padding: 15px;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.cms-table tbody tr:hover {
+    background: #f8f9fa;
+}
+
+/* Button Styles */
+.cms-btn-primary {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 25px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.cms-btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+    color: white;
+}
+
+.cms-btn-success {
+    background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+    border: none;
+    color: white;
+}
+
+.cms-btn-warning {
+    background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+    border: none;
+    color: white;
+}
+
+.cms-btn-danger {
+    background: linear-gradient(135deg, #fc466b 0%, #3f5efb 100%);
+    border: none;
+    color: white;
+}
+
+/* Utility Classes */
+.cms-loading {
+    text-align: center;
+    padding: 20px;
+    color: #6c757d;
+}
+
+.cms-empty-state {
+    text-align: center;
+    padding: 40px 20px;
+    color: #6c757d;
+}
+
+.cms-empty-state i {
+    font-size: 48px;
+    margin-bottom: 15px;
+    opacity: 0.5;
+}
+
+.cms-badge {
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.cms-badge.status-active {
+    background: #d4edda;
+    color: #155724;
+}
+
+.cms-badge.status-inactive {
+    background: #f8d7da;
+    color: #721c24;
+}
+
+.cms-badge.priority-high {
+    background: #f8d7da;
+    color: #721c24;
+}
+
+.cms-badge.priority-medium {
+    background: #fff3cd;
+    color: #856404;
+}
+
+.cms-badge.priority-low {
+    background: #d1ecf1;
+    color: #0c5460;
+}
+
+/* Print Styles */
+@media print {
+    .cms-no-print {
+        display: none !important;
+    }
+    
+    .cms-prescription,
+    .cms-bill {
+        padding: 20px;
+        font-size: 12px;
+    }
+    
+    .cms-prescription h2,
+    .cms-bill h2 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    
+    .cms-prescription table,
+    .cms-bill table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 10px 0;
+    }
+    
+    .cms-prescription th,
+    .cms-prescription td,
+    .cms-bill th,
+    .cms-bill td {
+        border: 1px solid #000;
+        padding: 5px;
+        text-align: left;
+    }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .cms-dashboard {
+        padding: 15px;
+    }
+    
+    .cms-stat-card .card-body {
+        padding: 20px;
+    }
+    
+    .cms-stat-number {
+        font-size: 24px;
+    }
+    
+    .cms-quick-action {
+        padding: 15px;
+        margin-bottom: 10px;
+    }
+    
+    .cms-form {
+        padding: 20px;
+    }
+    
+    .cms-patient-card {
+        padding: 15px;
+    }
+    
+    .cms-table {
+        font-size: 14px;
+    }
+    
+    .cms-table th,
+    .cms-table td {
+        padding: 10px 8px;
+    }
+}
+
+@media (max-width: 576px) {
+    .cms-stat-card {
+        margin-bottom: 15px;
+    }
+    
+    .cms-patient-avatar {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .cms-medicine-row {
+        padding: 10px;
+    }
+    
+    .cms-form .btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+/* Custom Scrollbar */
+.cms-scrollable::-webkit-scrollbar {
+    width: 6px;
+}
+
+.cms-scrollable::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 3px;
+}
+
+.cms-scrollable::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+    border-radius: 3px;
+}
+
+.cms-scrollable::-webkit-scrollbar-thumb:hover {
+    background: #a8a8a8;
+}
+
+/* Animation Classes */
+.cms-fade-in {
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.cms-slide-up {
+    animation: slideUp 0.3s ease-out;
+}
+
+@keyframes slideUp {
+    from { transform: translateY(30px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+/* Loading Spinner */
+.cms-spinner {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid #f3f3f3;
+    border-top: 3px solid #007bff;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
